@@ -1,8 +1,8 @@
 * {
-
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
+    overflow: hidden;
 }
 
 body {
@@ -15,3 +15,30 @@ body {
 }
 
 /* navbar desighn  */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+    color: white;
+    font-size: 30px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    padding: 15px;
+}
+
+.list::after {
+    position: absolute;
+    bottom: 43rem;
+    left: 789px;
+    content: "";
+    height: 2px;
+    border-bottom: 3px solid rgb(235, 224, 224);
+    width: 55%;
+}
