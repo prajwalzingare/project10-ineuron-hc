@@ -162,6 +162,11 @@ nav ul li {
 }
 
 @media screen and (max-width:900px) {
+
+    nav {
+        font-size: 20px;
+    }
+
     nav ul .active {
         display: none;
     }
@@ -217,4 +222,14 @@ nav ul li {
     .card {
         padding-left: 7rem;
     }
+}
+
+@media screen and (max-width:400px) {
+    .main-left h1 {
+        font-size: 1rem;
+        width: 200px;
+        margin-top: 1rem;
+        margin-left: 3rem;
+    }
+
 }
