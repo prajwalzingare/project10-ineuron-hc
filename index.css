@@ -11,7 +11,9 @@ body {
     background-image: url(./images/plant.png);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: bottom;
+    background-position: center center;
+    background-attachment: fixed;
+    overflow: hidden;
 }
 
 /* navbar desighn  */
@@ -22,6 +24,7 @@ nav {
     margin: 20px;
     color: white;
     font-size: 30px;
+    overflow-x: auto;
 }
 
 nav h1 {
@@ -129,4 +132,89 @@ nav ul li {
     bottom: -67px;
     right: 20px;
     transform: rotate(90deg);
+}
+
+
+@media only screen and (max-width: 1030px) {
+    .main-left h1 {
+        font-size: 2.4rem;
+    }
+
+    .main-left button {
+        font-size: .8rem;
+        font-weight: 600;
+        margin-top: 1rem;
+        padding: 1rem 4rem;
+    }
+
+    .card-light {
+        position: absolute;
+        bottom: 1rem;
+        right: 0rem;
+        margin-right: 11rem;
+
+    }
+
+    .list::after {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width:900px) {
+    nav ul .active {
+        display: none;
+    }
+
+    nav h1 {
+        height: 30px;
+        width: 50px;
+        font-size: 1.5rem;
+        margin-left: 20px;
+        margin-top: -20px;
+    }
+
+    .card-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+
+    }
+
+    .main {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    body {
+        background-image: url(./images/plant.png);
+
+    }
+
+    .main-left {
+        margin-top: 18rem;
+    }
+
+    .main-left h1 {
+        font-size: 2rem;
+        width: 300px;
+        margin-top: 2rem;
+        margin-left: 3rem;
+    }
+
+    .main-left button {
+        border-radius: 5rem;
+        text-transform: uppercase;
+        font-size: 1rem;
+        font-weight: 500;
+        color: rgb(233, 220, 220);
+        margin-left: 3rem;
+        margin-top: 3rem;
+        padding: 1rem 3rem;
+    }
+
+    .card {
+        padding-left: 7rem;
+    }
 }
